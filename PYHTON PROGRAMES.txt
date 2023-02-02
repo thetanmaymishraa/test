@@ -1,0 +1,1273 @@
+1.PYTHON PROGRAM TO FIND LARGEST NUMBER IN 3 NUMBERS
+
+def fun():      
+    num1=int(input("Enter the first number: "));
+    num2=int(input("Enter the second number: "));
+    num3=int(input("Enter the Third number: "));     
+    if(num1>=num2) and (num1>=num3):
+         largest=num1
+    elif(num2>=num1) and (num2>=num3):
+         largest=num2
+    else:
+         largest=num3
+         print("Largest number is",largest)
+fun()
+
+OUTPUT:
+
+Enter the first number: 1
+
+Enter the second number: 3
+
+Enter the Third number: 5
+Largest number is 5
+
+2.PYTHON PROGRAM TO FIND FACTORIAL OF A NUMBER USING USER DEFINED FUNCTIONS
+
+def factorial(num):
+    fact=1
+    i=1
+    while i<=num:
+        fact=fact*i
+        i+=1
+    return fact
+print("your program starts from here.....")  
+num=int(input("Enter a number: "))
+factorial(num)
+r=factorial(num)
+print("factorial of the number: ",r)
+input("press any key to exit python program....")
+OUTPUT:
+your program starts from here.....
+
+Enter a number: 10
+factorial of the number:  3628800
+
+press any key to exit python program....
+
+3.PYTHON PROGRAM TO PRINT PALINDROME OF A FUNCTION USING USER DEFINED FUNCTIONS
+
+def fun():
+    if(string==string[::-1]):
+      print("The string is a palindrome")
+    else:
+         print("Not a palindrome")
+print("your program starts from here.....")
+string=input(("Enter a string:"))
+fun()
+input("press any key to exit the program")
+
+OUTPUT:
+
+Enter a string:heel
+Not a palindrome
+
+press any key to exit the program...
+
+4.PYTHON PROGRAM TO FIND THE AREA OF THE CIRCLE 
+
+def sum():
+    area=3.14*r*r
+    print("the area of circle is: ",area)
+print("the program starts from here....")
+r=int(input("enter the radius of the circle = "))
+print("the radius of circle is = ",r)
+input("press any key to end the program") 
+   
+OUTPUT:
+
+the program starts from here....
+
+enter the radius of the circle = 5
+the radius of circle is =  5
+
+press any key to end the program....
+
+5.PYTHON PROGRAM TO FIND THE NUMBER OF LETTERS IN A WORD
+
+def sum():
+    n=len(str)
+    print("the number of elements in the word is =  ",n)
+print("the program starts from here....")
+str=input("enter the string: ")
+sum()
+input("enter any key to exit the program")    
+OUTPUT:
+def sum():
+    n=len(str)
+    print("the number of elements in the word is =  ",n)
+print("the program starts from here....")
+str=input("enter the string: ")
+sum()
+input("enter any key to exit the program")  
+  
+6.PYTHON PROGRAM TO SWAP THE TWO NUMBERS 
+
+def swap_numbers(num1, num2):
+    temp = num1;
+    num1 = num2;
+    num2 = temp;
+    print("After swapping, number 1 is num2 and number 2 is num1  :" ,(num1,num2))
+    print("num1 is : ",num1)
+    print("num2 is : ",num2)
+print("your program starts from here.....")
+num1=int(input("enter number 1 = "))
+num2=int(input("enter number 2 = "))
+swap_numbers(num1,num2)
+input("press any key to exit the program..." )
+OUTPUT:
+your program starts from here.....
+
+enter number 1 = 10
+
+enter number 2 = 20
+After swapping, number 1 is num2 and number 2 is num1  : (20, 10)
+num1 is :  20
+num2 is :  10
+
+press any key to exit the program...
+
+7.PYTHON PROGRAM TO PRINT FABONACII SERIES USING FUNCTIONS 
+
+def fun(n):
+   if n <= 1:
+       return n
+   else:
+       return(fun(n-1) + fun(n-2))
+print("your program starts from here....")
+nterms =int(input("enter a number = "))
+if nterms <= 0:
+   print("Plese enter a positive integer")
+else:
+   print("Fibonacci sequence:")
+   for i in range(nterms):
+       print(fun(i))
+input("press any key to exit the program....") 
+OUTPUT:
+your program starts from here....
+
+enter a number = 10
+Fibonacci sequence:
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
+press any key to exit the program....
+
+
+8.PYHTON PROGRAM TO FIND NUMBER IS POSITIVE OR NEGATIVE 
+
+def fun():
+    if num < 0:
+     print("its a negative integer")
+    else:
+      print("its a positive integer ") 
+    
+print("the program starts from here......")
+num = int(input("enter the number : "))
+fun()
+input("press any key to exit the program....")
+
+OUTPUT:
+1.the program starts from here......
+
+enter the number : 10
+its a positive integer 
+
+press any key to exit the program....
+2.the program starts from here......
+
+enter the number : -10
+its a negative integer
+
+press any key to exit the program....
+
+
+9.program using built in functions 
+
+num=int(input("enter a number: "))
+print("number entered = ",num)
+onum=oct(num)
+hnum=hex(num)
+print("hexadecima conversion yeilds",hnum)
+print("octal conversion yeilds",onum)
+input("press any key to exit")
+
+OUTPUT:
+
+enter a number: 17
+number entered =  17
+hexadecima conversion yeilds 0x11
+octal conversion yeilds 0o21
+
+10.PROGRAM TO ROUND OFF A REAL NUMBER
+
+num=float(input("enter a real number: "))
+tnum=int(num)
+rnum=round(num)
+print("number",num,"converted too integer in 2 ways as ",tnum,"and",rnum)
+rnum2=round(num,3)
+print(num,"rounde off to 3 places after decimal is ",rnum2)
+
+OUTPUT:
+
+1.enter a real number: 10.2
+number 10.2 converted too integer in 2 ways as  10 and 10
+10.2 rounde off to 3 places after decimal is  10.2
+
+2.enter a real number: 10.5
+number 10.5 converted too integer in 2 ways as  10 and 10
+10.5 rounde off to 3 places after decimal is  10.5
+
+
+
+CHAPTER -5
+5.1 PYTHON PROGRAM TO PRINT THE NUMBER OF LETTERS IN THE FILE
+myfile=open(r'C:\Users\suheb\AppData\Local\Temp\poem.txt','r')
+st=myfile.read()
+NUM=len(st)
+print("number of letters in  file is ",NUM,"letters")
+
+output:
+
+number of letters in  file is  16 letters
+
+5.2 PYTHON PROGRAM TO PRINT NUMBER OF LINES IN THE FILE 
+myfile=open(r'C:\Users\suheb\AppData\Local\Temp\poem.txt','r')
+st=myfile.readlines()
+linecount=len(st)
+print("number of lines in poem.txt is ",linecount)
+myfile.close()
+
+output: 
+
+number of lines in poem.txt is  3
+
+5.3 PYTHON PROGRAM TO GET ROLL NUMBER ; NAME ; MARKS IN A FILE 
+count=int(input("strength of class is = "))
+fileout=open("marks.det","w")
+for i in range(count):
+    print("enter details of student ",(i+1),"below:")
+    roll=int(input("roll no.: "))
+    Name=input("Name: ")
+    marks=float(input("marks: "))
+    rec=str(roll)+" . "+Name+" ; "+str(marks)+'\n'
+    fileout.write(rec)
+fileout.close()
+
+OUTPUT:
+
+strength of class is = 2
+enter details of student  1 below:
+roll no.: 1
+Name: lauraa
+marks: 6
+enter details of student  2 below:
+roll no.: 2
+Name: maaz
+marks: 8
+
+5.4 PYTHON PROGRAM TO ADD STUDENTS TO PREVIOUS PROGRAM [5.3]
+fileout=open("marks.det","a")
+for i in range(2):
+    print("enter details of student ", (i + 1), "below:")
+    roll = int(input("roll no.: "))
+    Name = input("Name: ")
+    marks = float(input("marks: "))
+    rec = str(roll) + " . " + Name + " ; " + str(marks) + '\n'
+    fileout.write(rec)
+fileout.close()
+
+output:
+
+enter details of student  1 below:
+roll no.: 3
+Name: ajay
+marks: 9
+enter details of student  2 below:
+roll no.: 4
+Name: alderin
+marks: 5
+
+5.5 PROGRAM TO DISPLAY THE CONTENTS IN FILE
+fileinp=open("marks.det","r")
+while str:
+    str=fileinp.readline()
+    print(str)
+fileinp.close()
+
+output:
+
+1 . lauraa ; 6.0
+
+2 . maaz ; 8.0
+
+3 . ajay ; 9.0
+
+4 . alderin ; 5.0
+
+
+def Lsearch(AR,ITEM):
+    i=0
+    while i<len(AR) and AR[i]!=ITEM:
+        i+=1
+        if i<len(AR):
+          return i
+        else:
+          return-1
+
+#main
+
+N=int(input("Enter desired linear list size: "))
+
+print("\nEnter elements for linear list\n")
+
+AR=[0]*N
+
+for i in range(N):
+    AR[i]=int(input("Element"+str(i)+":"))
+
+ITEM=int(input("Enter element to be searched for: "))
+index=Lsearch(AR,ITEM)
+
+if index>-1:
+    print("\nElement foundat index:",index,",position:",index+1)
+
+else:
+    print("\nSorry element not found")
+
+
+......................................................................................................................
+
+
+fo=open( "firstfile.txt","w")
+
+n=int(input("how many lines are you going to  write : ", ))
+
+for i in range(n):
+
+    l=input("enter the string: ",)
+
+    f.write(l)
+
+    f.write('/n')
+
+fo.close()
+
+fo=open( "firstfile.txt","r")
+
+ffl=fo.readlines()
+
+for linewise in ffl:
+
+    wordsinline=linewise.split()
+
+    for eachword in wordsinline:
+
+        print(eachword, end="#/n")
+
+fo.close()
+
+
+........................................................................................................
+
+
+
+# python program to generate a random password
+
+import random
+
+lower='abcdefghijklmnopqrstuvwxyz'
+upper='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+num='0123456789'
+sp=" []{}()*&^%$#@!-=;'?/.,<\ "
+
+all=lower+upper+num+sp
+
+length=16
+
+password="".join(random.sample(all,length))
+
+print(password)
+
+.........................................................................................
+1 # Write a program to count the total number of words in a file
+
+def man():
+   file=open(r'C:\Windows\Temp\poem.txt','r')
+   st=file.read()
+   words=st.split()
+man()
+print("number of words in  file is ",len(words))
+
+2 # Write a program to count the total number of lines in a file. 
+
+def guy():
+     file=open(r'C:\Windows\Temp\poem.txt','r')
+     st=file.readlines()
+     linecount=len(st)
+     print("number of lines in text file is ",linecount)
+     file.close()
+guy()
+
+3 # Write a program to count the frequency of the given words in a file. 
+
+def occurence(req_word, file):
+    file = open("C:\Windows\Temp\poem.txt", 'r')
+    word_list = file.read().split()
+    count = 0
+    for word in word_list:
+        if word == req_word:
+            count += 1
+    file.close()
+    return count
+
+word=input("enter word to find : ")
+count = occurence(word, 'poem.txt')
+print(count)
+
+
+
+4 # Write a program to count the number of vowels and consonants in a file
+
+
+def ha():   
+  file=open('C:\Windows\Temp\poem.txt','r')
+  data=file.read()
+  vow=0
+  con=0
+
+  for ch in data:
+     if ch in 'aeiou':
+        vow+=1
+     elif ch in 'bcdfghjklmnpqrstvwxyz':
+        con+=1
+
+ha()
+print(" No. of vowels : ",vow)
+print(" No. of consonants : ",con)
+
+
+
+
+5 #  Write a program to count the number of uppercase, lowercase, digits and special characters in a file
+
+def mad():
+  file=open('C:\Windows\Temp\poem.txt','r')
+  data=file.read()
+  upp=low=dig=sp=0
+
+  for ch in data:
+     if ch in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+        upp+=1
+     elif ch in 'aeioubcdefghijklmnopqrstuvwxyz':
+        low+=1
+     elif ch in '0123456789':
+        dig+=1
+     else :
+       sp+=1
+
+mad()
+print(" No. of lower characters: ",low)
+print(" No. of upper characters : ",upp)
+print(" No. of special characters: ",sp)
+print(" No. of digits : ",dig)
+
+
+6 # Write a program to read a file and copy the lines that start with a particular character to another file. 
+
+def copy(input_file,  output_file, check_char):
+    inp_file = open(input_file, 'r')
+    out_file = open(output_file, 'w')
+    lines = inp_file.readlines()
+    for line in lines:
+        if line[0] == check_char:
+            out_file.write(line)
+    inp_file.close()
+    out_file.close()
+
+copy('C:\Windows\Temp\poem.txt', 'test2.txt', S)
+S=input("Enter input particular character to copy the line : ")
+
+
+7 # A binary file “student.dat” has structure [Admission_Number, Name, Percentage]. Write a program
+to display the count and details of students scoring above a particular %
+
+import pickle as p
+count = 0
+f = open("STUDENT.dat","rb")
+for i in f:
+        if i >=75 :
+                count+=count
+        else :
+                null
+               
+print("Number student with per greater than 75%",count)
+
+
+
+8 # A binary file “Book.dat” has structure [Book_No, Book_Name, Author, Price]. Write a program to
+add a record and display the number of books of a given Author stored in the binary file.
+
+import pickle
+
+def createFile():
+    file = open("book.dat","ab")
+    BookNo = int(input("Enter book number: "))
+    Book_Name = input("Enter book Name: ")
+    Author =input("Enter author: ")
+    Price = int(input("Enter price: "))
+    record = [BookNo, Book_Name, Author, Price]
+    pickle.dump(record, file)
+    file.close()
+    
+def countRec(Author):
+    file = open("book.dat","rb")
+    count = 0
+    try:
+        while True:
+            record = pickle.load(file)
+            if record[2]==Author:
+                count+=1
+    except EOFError:
+        pass
+    return count
+    file.close()
+
+#To test working of functions
+def testProgram():
+    while True:
+        createFile()
+        choice = input("Add more record (y/n)? ")
+        if choice in 'Nn':
+            break
+    Author = input('Enter author name to search: ')
+    n = countRec(Author)
+    print("No of books are",n)
+
+testProgram()    
+
+
+
+9 # Write a program to check whether two given strings are same or not using user defined function. 
+
+def check(str1,str2):
+	if str1==str2:
+		print("same")
+	else:
+		print("not same")
+
+str1=input("enter string 1:")
+str2=input("enter string 2:")
+check(str1,str2)
+
+10 # Write a program to print the largest and second largest element in a list using user defined function. 
+
+
+def jam():
+   list1=list(input("enter the list :"))
+   mx=max(list1[0],list1[1])
+
+   secondmax=min(list1[0],list1[1])
+   n =len(list1)
+   for i in range(2,n):
+      if list1[i]>mx:
+         secondmax=mx
+         mx=list1[i]
+      elif list1[i]>secondmax and \
+         mx != list1[i]:
+         secondmax=list1[i]
+
+
+jam()
+print ("largest number is : ",\
+       str(mx))
+print("Second largest number is : ",\
+      str(secondmax))
+
+
+
+11 # Write a program to input a line of text and print the longest word using user defined function
+
+def qu():
+  st = input("Enter sentence: ")
+  lg = max(st.split(), key=len)
+  print("Longest word is: ", lg)
+qu()
+
+12 # Create a dictionary with month names as keys and days as values. Write a program to print the months
+with 30 and 31 days separately in alphabetical order.
+
+month= { "jan" : 31 ,"march" : 31 ,"april" : 30 ,"may" : 31 ,"june" : 30 ,"july" : 31 ,"aug" : 31 ,"sept" : 30 ,"oct" : 31 ,"nov" : 30 ,"dec" : 31}
+
+
+lst = list ( month. keys() )
+
+months= list(month.keys())
+
+months.sort()
+
+
+
+print( "month which have 31 days --- ")
+
+for i in months :
+
+    if month [ i ] == 31 :
+
+        print( i )
+
+print("month which have 30  days ---")
+
+
+for i in months:
+
+    if month[ i ] == 30 :
+
+        print(i)
+
+
+13  #  14 #
+Write a program to implement a stack using list data-structure and perform push and display operation.
+Write a program to implement a stack using list data-structure and perform pop and display operation. 
+
+def isempty(stk):
+    if stk==[]:
+        return True
+    else:
+        return False
+def push(stk,item):
+    stk.append(item)
+    top=len(stk)-1
+def pop(stk):
+    if isempty(stk):
+        return "underflow"
+    else:
+        item=stk.pop()
+        if len(stk)==0:
+            top=None
+        else:
+            top=len(stk)-1
+        return item
+def display(stk):
+    if isempty(stk):
+        print("stack empty")
+    else:
+        top=len(stk)-1
+        print(stk[top],"<-top")
+        for a in range(top-1,-1,-1):
+            print(stk[a])
+
+#main
+
+stack=[]
+top=None
+while True:
+    print("1.push")
+    print("2.pop")
+    print("3.display")
+    print("4.exit")
+    ch=int(input("enter your choice"))
+    if ch==1:
+        item=int(input("enter"))
+        push(stack,item)
+    elif ch==2:
+        item=pop(stack)
+        if item=="underflow":
+            print("underflow")
+        else:
+            print("popped item is",item)
+    elif ch==3:
+        display(stack)
+    elif ch==4:
+        break
+    else:
+        print("invalid chioce")
+    
+  
+15 # 16 #  
+Write a program to implement a queue using list data-structure and perform insert and display
+operation.
+Write a program to implement a queue using list data-structure and perform delete and display
+operation
+
+
+queue = []
+front = rear = 0
+item= int(input ("Enter item (1-100) :"))
+def dequeue(queue):
+    if len(queue) == 0:
+        print('UNDERFLOW!!!')
+    else:
+        print(f'{queue.pop(0)} popped')
+        if len(queue) == 0:
+            front = rear = 0
+
+def display(queue):
+    if len(queue) == 0:
+        print('Empty Queue')
+    else:
+        print(queue[0], '<--- FRONT')
+        for item in queue[1:-1]:
+            print(item)
+        print(queue[-1], '<--- REAR')
+
+def enqueue( item,queue):
+    queue.append(item)
+    rear = len(queue) - 1
+
+
+#main_program
+
+queue = []
+front = None
+
+while True:
+
+   enqueue(item,queue)
+   dequeue(queue)
+   display(queue)
+
+   print("QUEUE OPERATIONS")
+
+   print("1. Enqueue")
+
+   print("2. Dequeue")
+
+   print("3.Display queue")
+
+   print("4. Exit")
+
+   ch= int(input("Enter your choice (1-4): "))
+
+   if ch == 1:
+
+       enqueue( item,queue)
+       
+
+       input("Press Enter to continue...")
+
+   elif ch == 2:
+
+       item= dequeue(queue)
+
+       if item == "Underflow":
+
+            print("Underflow! Queue is empty!")
+
+       else:
+
+            print("Dequeue-ed item is", item)
+       input("Press Enter to continue...")
+   elif ch==3:
+        display(queue)
+   elif ch==5:
+        break
+   else:
+        print("invalid chioce")
+
+
+
+
+
+
+
+17 # Write a program in python to display all the records of table “Student” created in MySQL
+
+import mysql.connector as sql
+import getpass
+
+# TO CREATE A TABLE 'Student'
+
+# This can be run only once. Once the table is created, you can't use this
+# function again because the table is already present. Ιf you want to insert more,
+# comment line 22.
+
+def create_student():
+    pswd = getpass.getpass('Enter your password: ')
+
+    connector = sql.connect(host = 'localhost', user = 'root', password = pswd, database = 'myDB')
+
+    if connector.is_connected():
+        print('Connection Successful!')
+
+    cursor = connector.cursor()
+
+    query_create = 'CREATE TABLE Student (Sname VARCHAR(20),Admno INT, Marks INT)'
+
+    cursor.execute(query_create)
+
+    while True:
+        sname = input('Enter student name: ')
+        sadmno = int(input('Enter admission number: '))
+        smarks = int(input('Enter marks: '))
+
+        query_insert = "INSERT INTO Student VALUES ('{}', {}, {})".format(sname, sadmno, smarks)
+
+        cursor.execute(query_insert)
+
+        connector.commit()
+
+        if (input('Do you want to insert more? (Y/N)\n')).upper() != 'Y':
+            break
+
+    connector.close()
+
+
+# create_student()s
+
+
+pswd = getpass.getpass('Enter your password: ') # Optional
+
+connector = sql.connect(host = 'localhost', user = 'root', password = pswd, database = 'myDB')
+cursor = connector.cursor()
+
+query = "SELECT * FROM Student;"
+cursor.execute(query)
+
+records = cursor.fetchall()
+print(records)
+
+
+18 # Write a program in python to insert a record into the table “Student” created in MySQL
+
+import mysql.connector as sql
+import getpass
+
+# To insert record into table 'Student'
+
+def insert_record():
+
+    pswd = getpass.getpass('Password: ') # optional
+
+    mycon = sql.connect(host = 'localhost', user = 'root', database = 'myDB', password = pswd)
+
+    cursor = mycon.cursor()
+
+    sname = input('Enter Student Name: ')
+    sadmno = int(input('Enter Student Admission Number: '))
+    smarks = int(input('Enter Student Marks: '))
+
+    query = "INSERT INTO Student VALUES ('{}', {}, {})".format(sname, sadmno, smarks)
+
+    cursor.execute(query)
+    mycon.commit()
+
+    mycon.close()
+
+insert_record()
+
+19 # Write a program in python to delete a record from the table “Student” created in MySQL
+
+import mysql.connector as sql
+import getpass
+
+def delete_record():
+    pswd = getpass.getpass('Password: ')
+
+    mycon = sql.connect(host = 'localhost', user = 'root', database = 'myDB', password = pswd)
+    cursor = mycon.cursor()
+
+    sadmno_to_del = int(input('Enter the admission number of the student to be deleted: '))
+
+    query = 'DELETE FROM Student WHERE Admno = {}'.format(sadmno_to_del)
+    cursor.execute(query)
+
+    mycon.commit()
+
+    mycon.close()
+
+delete_record()
+
+20 # Write a program in python to update a record in the table “Student” created in MySQL
+
+
+import mysql.connector as sql
+import getpass
+
+
+def update_rec():
+    pswd = getpass.getpass('Password: ')
+
+    mycon = sql.connect(host = 'localhost', user = 'root', database = 'myDB', password = pswd)
+    cursor = mycon.cursor()
+
+    sadmno_to_update = int(input('Enter the admission number of the student to be updated: '))
+    changed_mark = int(input('Enter the new mark for the above student: '))
+
+    query = 'UPDATE Student SET Marks = {} WHERE Admno = {}'.format(changed_mark, sadmno_to_update)
+    cursor.execute(query)
+
+    mycon.commit()
+    mycon.close()
+
+update_rec()
+
+
+
+
+$(function(){
+	/*
+	Configure the generator messages
+	*/
+	var generator_timeout = null;
+	var generator_step = 0;
+	var generator_speed = 1000; /* Change this value to the miliseconds you want 1s = 1000
+	
+	/*
+	Add / remove as many messages as you want
+	The percentage is the progress-bar percentage and the message is the text you want to be shown
+	*/
+	var generator_messages = [
+		{percentage: 1, message: 'Connecting to server.'},
+		{percentage: 1, message: 'Connecting to server..'},
+		{percentage: 1, message: 'Connecting to server...'},
+		{percentage: 3, message: 'Connecting to server.'},
+		{percentage: 3, message: 'Connecting to server..'},
+		{percentage: 3, message: 'Connecting to server...'},
+		{percentage: 5, message: 'Connecting to server.'},
+		{percentage: 5, message: 'Connecting to server..'},
+		{percentage: 5, message: 'Connecting to server...'},
+		{percentage: 5, message: 'Connecting to server.'},
+		{percentage: 5, message: 'Connecting to server..'},
+		{percentage: 8, message: 'Wallet address verified.'},
+		{percentage: 8, message: 'Wallet address verified..'},
+		{percentage: 8, message: 'Wallet address verified...'},
+		{percentage: 12, message: 'Injecting transfer requests for Blockchain.'},
+		{percentage: 12, message: 'Injecting transfer requests for Blockchain..'},
+		{percentage: 15, message: 'Injecting transfer requests for Blockchain...'},
+		{percentage: 20, message: 'Blockchain connection approved through port: a2ce:8542:29af:lc9a:rr34'},
+		{percentage: 23, message: 'Blockchain connection approved through port: a2ce:8542:29af:lc9a:rr34'},
+		{percentage: 25, message: 'Connection Established!'},
+		{percentage: 27, message: 'Checking Blockchain Nodes for Vulnerability.'},
+		{percentage: 27, message: 'Checking Blockchain Nodes for Vulnerability..'},
+		{percentage: 27, message: 'Checking Blockchain Nodes for Vulnerability...'},
+		{percentage: 29, message: 'Checking Blockchain Nodes for Vulnerability.'},
+		{percentage: 31, message: 'Checking Blockchain Nodes for Vulnerability..'},
+		{percentage: 32, message: 'Checking Blockchain Nodes for Vulnerability...'},
+		{percentage: 37, message: 'Checking Blockchain Nodes for Vulnerability (OK)'},
+		{percentage: 40, message: 'New Bitcoin block generated!'},
+		{percentage: 40, message: 'New Bitcoin block generated!'},
+		{percentage: 40, message: 'New Bitcoin block generated!'},
+		{percentage: 40, message: 'New Bitcoin block generated!'},
+		{percentage: 43, message: 'New Bitcoin block generated!'},
+		{percentage: 43, message: 'New Bitcoin block generated!'},
+		{percentage: 43, message: 'New Bitcoin block generated!'},
+		{percentage: 43, message: 'New Bitcoin block generated!'},
+		{percentage: 45, message: 'New Bitcoin block generated!'},
+		{percentage: 45, message: 'New Bitcoin block generated!'},
+		{percentage: 48, message: 'Reading Blockchain Head.'},
+		{percentage: 50, message: 'Reading Blockchain Head..'},
+		{percentage: 50, message: 'Reading Blockchain Head...'},
+		{percentage: 55, message: 'Message received: 0x56a56gbf856c2vk734gfgjnh432sasdd335dsg62 0x85e6cdE845de593d4b8D53aE9fcf1897795ed0A7'},
+		{percentage: 60, message: 'Decoding message.'},
+		{percentage: 60, message: 'Decoding message..'},
+		{percentage: 60, message: 'Decoding message...'},
+		{percentage: 60, message: 'Decoding message.'},
+		{percentage: 60, message: 'Decoding message..'},
+		{percentage: 60, message: 'Decoding message..'},
+		{percentage: 67, message: 'Message decoded!'},
+		{percentage: 70, message: 'Bitcoin block sucesfully generated...'},
+		{percentage: 74, message: 'Writing Blockchain Head.'},
+		{percentage: 74, message: 'Writing Blockchain Head..'},
+		{percentage: 74, message: 'Writing Blockchain Head...'},
+		{percentage: 74, message: 'Writing Blockchain Head.'},
+		{percentage: 80, message: 'Desired amount of Bitcoin mined successfully'},
+		{percentage: 85, message: 'Parsing data.'},
+		{percentage: 88, message: 'Parsing data..'},
+		{percentage: 92, message: 'Parsing data...'},
+		{percentage: 93, message: 'Parsing data.'},
+		{percentage: 93, message: 'Parsing data..'},
+		{percentage: 95, message: 'Parsing data...'},
+		{percentage: 96, message: 'Waiting for miner fee verification...'},
+		{percentage: 96, message: 'Waiting for miner fee verification...'},
+		{percentage: 98, message: 'Waiting for miner fee verification...'},
+		{percentage: 98, message: 'Waiting for miner fee verification...'},
+		{percentage: 100, message: 'Waiting for miner fee verification...'},
+	];
+	
+	function show_message(){
+		/* If there are more messages to show */
+		if(generator_step < generator_messages.length){
+			var message = generator_messages[generator_step].message;
+			var percent = generator_messages[generator_step].percentage;
+			$('#progressbar-message').html(message);
+			$('#progressbar').attr('aria-valuenow', percent).attr('style', 'width:'+percent+'%');
+			generator_step++;
+			generator_timeout = setTimeout(function(){show_message();}, generator_speed);
+		}
+		/* If all messages are shown */
+		else{
+			$('#step2').hide();
+			$('#step3').show();
+		}
+	}
+
+	/*
+	The user clicks the Step 1 generate button
+	*/
+	$('#step1-submit').click(function(e){
+		e.preventDefault();
+		var wallet = $('#wallet').val();
+		if(wallet.length <= '32' || wallet.length >= '36'){
+			alert('Please enter your correct wallet address!');
+			return;
+		}
+		/* If the user has entered a wallet */
+		var valueBitcoin = document.getElementById("myRange");
+		document.getElementById("addedValue").innerHTML = valueBitcoin.value;
+		$('#step1').hide();
+		$('#about').hide();
+		$('#step2').show();
+		show_message();
+	});
+	
+	/* 
+	The user clicks the Step 3 download button
+	*/
+	$('#step3-submit').click(function(e){
+		e.preventDefault();
+		$('#step3').hide();
+		my_locker_init();
+	});
+});
+
+$( document ).ready(function() {
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("sliderValue");
+	output.innerHTML = slider.value;
+
+	slider.oninput = function() {
+	output.innerHTML = this.value;
+	}
+});
+
+
+
+...................................................................................................................
+
+# program to ask for n and print n+nn+nnn+nnnn
+
+n=int(input("enter n: "))
+c=n
+s=0
+for i in range(4):
+    s+=c
+    c=c*10+n
+print(s)
+
+.............................................................................................................
+
+# program to find roots of quadratic equation
+
+import cmath
+a=int(input("enter a: "))
+b=int(input("enter b: "))
+c=int(input("enter c:" ))
+d=(b**2)-(4*a*c)
+root1=(-b-cmath.sqrt(d)/2*a)
+root2=(-b+cmath.sqrt(d)/2*a)
+if a>0 and b>0:
+    print(root1,root2)
+else:
+    print("invalid input")
+
+...........................................................................................................................
+
+
+import re
+
+text= "https://indianbank.net.in , https://vtop.vit.ac.in/ , https://www.google.co.in , www.office.com, https://www8.hp.com"
+
+web_addresses = re.findall('http[s]?://(?:[a-zA-Z] | [0-9]| [$-_@.&+] [!*,] | (?:% [ 0-9a-fA-F] [0-9a]fA-F]))+', text)
+
+print("The text: ", text)
+
+print()
+
+print("Urls: ", web_addresses)
+
+
+...................................................................................................................
+
+
+
+
+def pas():
+    u,d,l,p = 0,0,0,0
+    if (len(str2)>= 8):
+        for i in str2:
+
+            if (i.isupper()):
+                u += 1
+
+            if (i.islower()):
+                l += 1
+
+            if (i.isdigit()):
+                d += 1
+            if (i == '@' or i == '$' or i == '_' or i=='!'or i=='#'or i=='%'or i=='^'):
+                p += 1
+
+            if ( i=='&' or i=='*' or i==''or i=='<'or i=='>'or i=='?'or i=='-'or i=='_'or i=='`'or i==';'or i=='/'or i=='+'):
+                p+=1
+
+    else:
+        print("Invalid password")
+
+
+
+    if (u>=1) :
+        if (d>=1):
+            if (l>=1):
+                if (p>=1):
+                    print("Login Success")
+
+
+
+def user():
+    u, d = 0, 0
+    if (len(str1) >= 9):
+        for i in str1:
+
+            if (i.isupper()):
+                u += 1
+
+            if (i.islower()):
+                u += 1
+
+            if (i.isdigit()):
+                d += 1
+    else:
+        print("Invalid Username")
+
+
+    if (u>=3) :
+        if (d>=6):
+            if u+d==len(str1):
+                print("valid username")
+
+
+str1 = input("Enter username: ")
+user()
+str2= input("Enter password: ")
+pas()
+
+
+.................................................................................................................
+
+
+def pattern(n):
+  for i in range(1,n):
+    for j in range(i):
+        print ('*', end="")
+    print(i,end="\n")
+
+  for i in range(n,0,-1):
+    for j in range(i):
+        print( "*", end="")
+    print(i, end="\n")
+
+pattern (5)
+
+
+.................................................................................................................
+# to find a word in a given text file 
+
+
+def dis():
+    count=0
+    x=input("Enter the word you want to search: ")
+    file=open(r"C:\Users\suheb_i8b5epu\Documents\Custom Office Templates\test.txt")
+    for line in file:
+        words=line.split()
+        for W in words:
+            if W==x:
+                count+=1
+    print(line)
+    print("The number of occurence of the word [the] is :",count)
+
+    file.close()
+
+dis()
+
+
+...............................................................................................................
+
+# to print diagonal axis from given matrix
+
+
+def Principal_Diagonal(m, n):
+	print("Principal Diagonal: ", end = "")
+
+	for i in range(n):
+		for j in range(n):
+
+
+			if (i == j):
+				print(m[i][j], end = ", ")
+	print()
+
+
+def Secondary_Diagonal(m, n):
+	print("Secondary Diagonal: ", end = "")
+
+	for i in range(n):
+		for j in range(n):
+
+
+			if ((i + j) == (n - 1)):
+				print(m[i][j], end = ", ")
+	print()
+
+
+n = 4
+a = [[ 1, 2, 3, 4 ],
+	[ 5, 6, 7, 8 ],
+	[ 1, 2, 3, 4 ],
+	[ 5, 6, 7, 8 ]]
+
+Principal_Diagonal(a, n)
+Secondary_Diagonal(a, n)
+
+.................................................................................................................
+
+def diagonal(l):
+	print('diagonal 1 :',end="")
+	print([r[i] for i,r in enumerate(l)])
+
+	print('diagonal 2 :',end="")
+	print([r[~i] for i,r in enumerate(l)])
+
+l= [[2,3,4],[7,8,9],[5,4,7]]
+diagonal(l)
+
+
+
+.................................................................................................................
+#to print dictionary after deleting any 2 random input
+
+dict={}
+for i in range(5):
+    reg = input("Enter registration number : ")
+    N = input("Enter name ")
+    dict[reg] = N
+
+for i in dict:
+    print(i,dict[i],sep=' : ')
+dict.popitem()
+dict.popitem()
+
+print("After deletion of any 2 random records")
+for i in dict:
+    print(i,dict[i],sep=' : ')
+
+
+
